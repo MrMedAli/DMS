@@ -1,0 +1,239 @@
+
+
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+ }
+ 
+ .signup-page {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start; /* Align items to the start to respect the padding */
+   min-height: 100vh; /* Minimum height to cover the full viewport height */
+   width: 100vw; /* Full width */
+   background-color: #d8dade; /* Path to your background image */
+   background-size: cover; /* Ensures the image covers the entire container */
+   background-position: center; /* Centers the image */
+   background-repeat: no-repeat; /* Prevents the image from repeating */
+   background-attachment: fixed; /* Keeps the image fixed during scroll */
+   padding-top: 10%; /* Space at the top */
+   padding-bottom: 6%; /* Space at the bottom */
+   box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+   overflow: auto; /* Allow scrolling */
+ }
+ 
+ .signup-container {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   max-width: 600px; /* Adjusted max width for form */
+   background: rgb(37 95 132);
+   border-radius: 10px;
+   
+   padding: 30px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+   background-clip: padding-box; /* Ensures the border does not cover the padding */
+   position: relative; /* Required for the pseudo-element to be positioned correctly */
+   animation: glow-border 1.5s infinite; /* Apply the glow animation */
+ }
+ 
+ /* Glowing border animation */
+ @keyframes glow-border {
+   0% {
+     box-shadow: 0 0 10px #000; /* Initial shadow */
+   }
+   50% {
+     box-shadow: 0 0 15px #4dcdff; /* Adjust the color and size as needed */
+   }
+   100% {
+     box-shadow: 0 0 10px #000; /* Return to initial shadow */
+   }
+ }
+ 
+ /* Styles for form headings */
+ .signup-container h3 {
+   color: #ffffff !important; /* Text color */
+   font-size: 2rem; /* Font size */
+   text-align: center; /* Center text alignment */
+   margin-bottom: 20px; /* Space below the heading */
+   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Font family */
+   font-style: italic; /* Italic style */
+   font-weight: bold; /* Makes the text bold */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+ }
+ 
+ .signup-container h5 {
+   color: #ffffff; /* Text color */
+   font-size: 1.2rem; /* Font size */
+   text-align: center; /* Center text alignment */
+   margin-bottom: 20px; /* Space below the heading */
+   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Font family */
+   font-style: italic; /* Italic style */
+   font-weight: bold; /* Makes the text bold */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+ }
+ 
+ /* Styles for form elements */
+ .form-group {
+   margin-bottom: 20px;
+   width: 100%; /* Full width for form-group */
+   display: flex;
+   
+   justify-content: center;
+ }
+ 
+ 
+ .form-control {
+   width: 100%; /* Full width */
+   padding: 15px; /* Padding inside the input */
+   border: 2px solid transparent; /* Remove default border */
+   border-radius: 5px; /* Rounded corners */
+   background: rgb(37 95 132); /* Background color for input fields */
+   color: #b4b1b1; /* Text color */
+   font-size: 18px; /* Font size */
+   box-sizing: border-box; /* Includes padding and border in the width */
+   position: relative; /* Required for the pseudo-element to be positioned correctly */
+ }
+ 
+ 
+ 
+ 
+ .modal-search-input {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc; /* Custom border */
+   border-radius: 4px;
+   background: #fff; /* Custom background */
+   color: #000; /* Custom text color */
+   font-size: 16px;
+   box-sizing: border-box;
+   position: relative;
+ }
+ 
+ /* Optional: Adjust margin if needed */
+ .search-container .modal-search-input {
+   margin-right: 8px; /* Space between input and button */
+ }
+ 
+ 
+ 
+ 
+ /* Styling the placeholder text */
+ .form-control::placeholder {
+   color: grey; /* Placeholder text color */
+   opacity: 1; /* Ensures full opacity for placeholder text */
+ }
+ 
+ /* Optional: Glowing border effect on input focus */
+ .form-control:focus {
+   outline: none; /* Remove default outline */
+   background-color: rgb(236, 239, 241);
+ }
+ 
+ .search-container {
+   display: flex;
+   align-items: center; /* Vertically align the items */
+   gap: 10px; /* Space between the input and the button */
+ }
+ 
+ .modal-search-input {
+   flex-grow: 1; /* Make the input field take up the remaining space */
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   background: #fff;
+   color: #000;
+   font-size: 16px;
+   box-sizing: border-box;
+ }
+ 
+ .search-container button {
+   white-space: nowrap; /* Prevent the button text from wrapping */
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Style for text center block */
+ .text-center-register {
+   color: #4f4f4f;
+   font-style: italic; /* Makes the text italic */
+   font-weight: normal; /* Ensures the text is not bold */
+   text-align: center; /* Center text alignment */
+ }
+ 
+ 
+ .text-center-register a {
+ color: white;
+   font-size: 1.3rem; /* Font size */
+   text-align: center; /* Center text alignment */
+   margin-bottom: 20px; /* Space below the heading */
+   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Font family */
+   font-style: italic; /* Italic style */
+   font-weight: bold; /* Makes the text bold */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+ }
+ 
+ .text-center-register a:hover {
+   text-decoration: underline;
+ }
+ 
+ .text-center-register p {
+ 
+   font-size: 1rem; /* Font size */
+   text-align: center; /* Center text alignment */
+   margin-bottom: 20px; /* Space below the heading */
+   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Font family */
+   font-style: italic; /* Italic style */
+   font-weight: bold; /* Makes the text bold */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+ }
+ 
+ .signup-container hr {
+   border: none; /* Remove default border */
+   height: 2px; /* Line height */
+   background: linear-gradient(90deg, transparent, #070707, transparent);
+   background-size: 10px 2px; /* Adjust the size of the waves */
+   background-repeat: repeat-x; /* Repeat the gradient horizontally */
+   margin: 20px 0; /* Space around the line */
+   position: relative; /* Required for pseudo-elements */
+ }
+ 
+ 
+ .register-btn {
+   width: 100%; /* Set to 100% to match input width */
+   padding: 15px;
+   border: none;
+   background: #5dbfd9;
+   color: #fff;
+   border-radius: 5px;
+   font-size: 14px;
+   cursor: pointer;
+   transition: background 0.3s;
+   font-weight: bold; /* Makes the text bold */
+ }
+ 
+ .register-btn:hover {
+   background: #0a58ca; /* Change background color on hover */
+   animation: glow 1.5s infinite; /* Apply the glow animation */}
+ 
+ .register-btn:active {
+   background-color: #2a4d68; /* Background color when active (pressed) */
+ }
+ 
+ 
+ .form-group .form-control{
+    width: 100%;
+   padding: 15px;
+   border-radius: 5px;
+   background: transparent;
+   color: #ffffff; /* Ensures that the text color is white */
+   font-size: 18px;
+   box-sizing: border-box;
+ }
+ 

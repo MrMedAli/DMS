@@ -1,0 +1,50 @@
+.main-content {
+   flex: 1;
+   padding: 20px;
+ }
+ 
+ .row {
+   margin-top: 20px; /* Adds space between the sidebar and the main content */
+ }
+ 
+ .col-md-3 {
+   margin-bottom: 20px; /* Adds space between the sidebar and the footer */
+   position: relative; /* Ensure positioning context */
+   z-index: 10; /* Bring sidebar to front */
+ }
+ 
+ .customer-content {
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .button-group {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+ }
+ 
+ .custom-btn {
+   background-color: #343a40;
+   color: white;
+   font-size: 16px;
+   font-weight: 500;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .custom-btn:hover {
+   background-color: #0056b3;
+ }
+ 
+ .fa-plus-circle {
+   font-size: 20px;
+ }
+ 

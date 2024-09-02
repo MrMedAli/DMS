@@ -1,0 +1,388 @@
+/* Main container for the management pages */
+.datasetManagementPage,
+.organizationManagementPage {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 100vw;
+  background-color: #d8dade;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure space between sections by adding margin-top */
+.datasetManagementPage {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.organizationManagementPage {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Main container for each page */
+.mainContainer {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  min-height: 600px;
+}
+
+/* Title for the section */
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the management actions area */
+.acManagment,
+.actionButtons {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.createDbButton,
+.createOrgButton {
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin-right: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  width: auto;
+  height: 50px;
+}
+
+.createDbButton i,
+.createOrgButton i {
+  margin-left: 8px;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+}
+
+.inputGroupAppend {
+  margin-left: -1px;
+}
+
+.formControlsearch {
+  flex: 1;
+background: transparent; 
+ padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  margin-right: 15px;
+  width: 100%;
+}
+
+
+
+.formControlsearch:focus {
+  outline: none; /* Remove default outline */
+  background-color: transparent;
+}
+
+
+
+.btn {
+  width: 20%;
+  padding: 12px;
+  font-size: 0.9rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0a58ca;
+}
+
+.btnorgdet {
+  width: 40%;
+  padding: 12px;
+  font-size: 0.9rem;
+  background-color: #25545f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+.btnorgdelete {
+  width: 32%;
+  padding: 12px;
+  font-size: 0.9rem;
+  background-color: #ee2222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btnorgdelete:hover{
+  background-color: #7b0000;
+
+}
+
+.btnuserdelete:hover{
+  background-color: #7b0000;
+
+}
+.btnorgdet:hover{
+  background-color: #429dc1;
+
+}
+
+.btnuserdelete {
+  width: 31%;
+  padding: 12px;
+  font-size: 0.9rem;
+  background-color: #ee2222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: -53%;
+}
+
+
+.btnuserupdate {
+  width: 15%;
+  padding: 12px;
+  font-size: 0.9rem;
+  background-color: #299d43;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0%;
+}
+
+
+.btnuserupdate:hover{
+  background-color: #35dc59;
+}
+
+.btnuserupdate-left {
+  margin-left:-50%;
+  width: 38%;
+
+}
+
+.btnuserdelete-left {
+  width: 36%;
+
+}
+
+/* Assuming styles is imported from the respective CSS module */
+.buttonContainer {
+  display: flex;
+  gap: 10px; /* Adjust spacing between buttons as needed */
+  /* Optional: Align buttons vertically centered */
+  align-items: center;
+}
+
+
+
+
+
+.btnaccount {
+  width: 44%;
+  padding: 12px;
+  font-size: 0.9rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+.btnroleuser {
+  width: 57%;
+  font-size: 1rem;
+  color: #595454;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+
+
+
+.table {
+  width: 100%;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  background: #6b86a3;
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background: #e9ecef;
+}
+
+.table td,
+.table th {
+  padding: 15px;
+  border: 1px solid #dee2e6;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.returnButton {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.returnButton:hover {
+  background-color: #0056b3;
+}
+
+/* Link for viewing details */
+.detailsLink {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.detailsLink:hover {
+  color: #0056b3;
+}
+
+
+
+
+.modal-search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Custom border */
+  border-radius: 4px;
+  background: #fff; /* Custom background */
+  color: #000; /* Custom text color */
+  font-size: 14px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Optional: Adjust margin if needed */
+.search-container .modal-search-input {
+  margin-right: 8px; /* Space between input and button */
+}
+
+
+.modal-search-input:focus {
+  background: #fff; /* Custom background */
+color: #fff;
+}
+
+.search-container {
+  display: flex;
+  align-items: center; /* Vertically align the items */
+  gap: 10px; /* Space between the input and the button */
+}
+
+.modal-search-input {
+  flex-grow: 1; /* Make the input field take up the remaining space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.search-container button {
+  white-space: nowrap; /* Prevent the button text from wrapping */
+}
+
+
+
+
+.deletedata {
+  width: 15%;
+  padding: 12px;
+  font-size: 0.9rem;
+  background-color: #ef3434;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0%;
+}
+
+
+.deletedata:hover{
+  
+  background-color: #a70a10;
+  
+}
+
+.btndatadet {
+  width: 14%;
+  padding: 12px;
+  font-size: 0.9rem;
+  background-color: #25545f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 13%;
+}
+
+.btndatadet:hover{
+  
+  background-color: #238fbd;
+  
+}

@@ -1,0 +1,149 @@
+.dashboard-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 100vh; /* Use min-height to ensure the container always covers the full viewport height */
+   padding: 0px;
+   background-color: #f4f5f7;
+ }
+ 
+ .dashboard {
+   flex-grow: 1; /* Ensure the dashboard expands to fill the remaining space */
+   padding: 20px;
+ }
+ 
+ 
+ .card-container {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 0px;
+   margin-top: 50px;
+ }
+ 
+ .card {
+   flex: 1;
+   margin: 0 10px;
+   padding: 20px;
+   background: #f7f7f7;
+   border-radius: 10px;
+   text-align: center;
+   border: 1px solid #ddd;
+ 
+ }
+ 
+ 
+ 
+ .cardJsonFile
+ {
+   flex: 1;
+   margin: 0 10px;
+   padding: 20px;
+   background: #f7f7f7;
+   border-radius: 10px;
+   text-align: center;
+   border: 1px solid #ddd;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top: 9%;
+ 
+ }
+ 
+ .cardreq {
+   flex: 1;
+   margin: 0 10px;
+   padding: 20px;
+   background: #f7f7f7;
+   border-radius: 10px;
+   text-align: center;
+   border: 1px solid #ddd;
+   margin-top: 7%;
+   margin-bottom: 2%;
+   
+   
+ }
+ 
+ 
+ .groups-table-pageJson{
+   flex: 1;
+   margin: 0 10px;
+   padding: 20px;
+   background: #f7f7f7;
+   border-radius: 10px;
+   text-align: center;
+   border: 1px solid #ddd;
+   margin-top: -7%;}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .chart-container-custom {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 40px;
+ }
+ 
+ 
+ .chart-container-custom h3{
+   text-align: center; 
+ }
+ 
+ .card-header {
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 10px;
+   background-color: #66b0ff;
+ }
+ 
+ .chart {
+   flex: 1;
+   margin: 20px;
+   padding: 20px;
+   background: #fff;
+   border-radius: 10px;
+   height: 100%;
+   box-sizing: border-box;
+   overflow: hidden;
+   border: 1px solid #ddd;
+ }
+ 
+ .chart-org {
+   flex: 1;
+   margin: 20px;
+   padding: 20px;
+   background: #fff;
+   border-radius: 10px;
+   height: 400px;
+   box-sizing: border-box;
+   overflow: hidden;
+   border: 1px solid #ddd;
+   display: flex;
+   flex-direction: column; /* Stack title and chart vertically */
+   align-items: center; /* Center horizontally */
+   justify-content: center; /* Center vertically */
+ }
+ 
+ .chart-org .chart-title {
+   margin-top: 10px; /* Space between title and chart */
+ 
+   margin-bottom: 5px; /* Space between title and chart */
+   text-align: center; /* Center title text */
+ }
+ 
+ .chart-org canvas {
+   max-width: 100%; /* Ensure canvas does not overflow container */
+   max-height: 90%; /* Ensure canvas does not overflow container */
+   width: auto; /* Maintain aspect ratio */
+   height: auto; /* Maintain aspect ratio */
+ }
+ 
+ 
+ .footer {
+   margin-top: 40px;
+ }
+ 

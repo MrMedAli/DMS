@@ -1,0 +1,143 @@
+.groups-table-page {
+   background-color: #f9f9f9;
+   padding: 20px;
+   border-radius: 8px;
+}
+
+.page-container {
+   margin-top: 122px;
+   margin-bottom: 50px;
+}
+
+.title {
+   font-weight: bold;
+   font-size: 2rem;
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.group-management .create-group-button {
+   background-color: #007bff;
+   border: none;
+   color: white;
+   font-size: 16px;
+   padding: 10px 20px;
+   margin-left: -80%;
+}
+
+.group-table {
+   width: 100%;
+   font-size: 1rem;
+   margin-top: 20px;
+}
+
+.group-table tr {
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+}
+
+.group-table th, .group-table td {
+   text-align: center;
+   vertical-align: middle;
+   padding: 15px 10px;
+}
+
+.group-table .form-select {
+   width: 100%;
+   padding: 8px;
+   font-size: 1rem;
+}
+
+.group-table .btn-outline-primary, .group-table .btn-outline-danger {
+   padding: 5px 15px;
+   font-size: 1rem;
+}
+
+.text-center {
+   margin-top: 20px;
+}
+
+.btn-secondary {
+   background-color: #6c757d;
+   border-color: #6c757d;
+}
+.group-table .btn-group {
+   display: flex; /* Use flexbox to align buttons horizontally */
+   gap: 10px; /* Add some space between the buttons */
+   justify-content: center; /* Center buttons horizontally in the cell */
+}
+
+.group-table .btn {
+   padding: 5px 10px; /* Adjust padding for better alignment */
+   font-size: 1rem; /* Keep button text size consistent */
+}
+
+.deleteuser{  
+
+justify-content: center;
+background-color: red; }
+
+.key-value-form-container {
+   background-color: #f9f9f9;
+   padding: 20px;
+   border-radius: 8px;
+}
+
+.key-value-form-card {
+   width: 100%;
+   max-width: 50rem; /* Adjust width as needed */
+   margin: 0 auto;
+}
+
+.key-value-form-title {
+   display: flex; /* Align items horizontally */
+   align-items: center; /* Vertically center items */
+   font-size: 1.5rem; /* Adjust font size if needed */
+ }
+ 
+ .key-value-form-title h5 {
+   margin: 0; /* Remove default margin */
+   margin-left: 10px; /* Space between the icon and the title */
+   font-size: 1.5rem; /* Ensure the font size matches */
+ }
+ 
+.key-value-form .btn-group {
+   display: flex;
+   gap: 10px; /* Add some space between buttons */
+   justify-content: center; /* Center buttons horizontally */
+}
+
+.key-value-form .btn {
+   padding: 5px 10px; /* Adjust padding */
+   font-size: 1rem; /* Keep button text size consistent */
+}
+
+
+.custom-input-key,
+.custom-input-value {
+  background-color: transparent;
+  background:transparent; /* Make the input background transparent */
+  border: 1px solid #ccc; /* Optional: Add a border to the input */
+  color: #000; /* Optional: Set text color */
+  padding: 8px; /* Adjust padding as needed */
+  font-size: 1rem; /* Adjust font size as needed */
+  border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+.custom-input-key:hover,
+.custom-input-value:hover {
+   background:transparent; /* Make the input background transparent */
+
+  background-color: transparent; /* Keep background transparent on hover */
+  border-color: #888; /* Optional: Change border color on hover */
+}
+
+.custom-input-key::placeholder,
+.custom-input-value::placeholder {
+   background:transparent; /* Make the input background transparent */
+
+  color: #888; /* Optional: Set color for the placeholder text */
+}
+

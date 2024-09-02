@@ -1,0 +1,32 @@
+.notification-button {
+   position: relative;
+   padding-right: 25px;
+   height: 50px;
+   /* Ensure space for the badge */
+}
+
+.notification-badge {
+   position: absolute;
+   top: -5px;
+   right: -10px;
+   padding: 5px 10px;
+   border-radius: 50%;
+   background: red;
+   color: white;
+   font-size: 0.75rem;
+}
+
+/* New custom button styles */
+/* .btn-custom {
+   background-color: #874caf; 
+   color: white;  
+   border: none;  
+   padding: 10px 20px;  
+   font-size: 1rem; 
+   cursor: pointer;  
+   transition: background-color 0.3s; 
+}
+
+.btn-custom:hover {
+   background-color: #45a049; 
+} */

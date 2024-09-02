@@ -1,0 +1,78 @@
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   background: none;
+ }
+ 
+ .home-page {
+   display: flex;
+   height: 100vh; /* Full viewport height */
+   margin: 0;
+ }
+ 
+ .left-section {
+   flex: 2; /* Larger flex value for the left section */
+   background-image: url('/images/pic10.webp'); /* Use your background image */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+ }
+ 
+ .right-section {
+   flex: 1; /* Smaller flex value for the right section */
+   display: flex;
+   flex-direction: column; /* Align items vertically */
+   justify-content: flex-start; /* Align items to the top */
+   align-items: center; /* Center items horizontally */
+   background: linear-gradient(99deg, rgb(4 64 92), rgba(255, 255, 255, 0.1));  padding: 20px; /* Add some padding inside the right section */
+   margin-top: 4%;
+   margin-bottom: 5%;
+   margin-right: 1%;
+   margin-left: 1%;  border: 2px solid #ffffff; /* Add a white border around the section */
+   transform: translateY(20px); /* Translate the content 20px towards the bottom */
+ }
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400&display=swap');
+ 
+ .right-section h1 {
+   font-family: 'emoji', serif; /* A classic serif font for a more elegant look */
+   font-size: 2.5rem;
+   color: #ffffff;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   letter-spacing: 1px; /* Slight letter spacing for subtle elegance */
+   text-transform: none; /* Keep original text case */
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+ }
+ 
+ .right-section p {
+   font-family: 'unset', sans-serif; /* Clean and modern sans-serif for the paragraph */
+   font-size: 1.1rem;
+   color: #060606;
+   max-width: 600px;
+   margin: 0;
+   margin-bottom: 48px;
+   margin-top: 10%;
+  line-height: 1.8;
+   text-align: left; /* Align text to the left for a more traditional layout */
+ }
+ 
+ 
+ .cta-button {
+   margin-top: 20px;
+   padding: 10px 20px;
+   font-size: 1.2rem;
+   background-color: #1e9bd9; /* Bright color for the CTA button */
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+ }
+ 
+ .cta-button:hover {
+   background-color: #8c8f91; /* Darker shade on hover */
+ }
+ 

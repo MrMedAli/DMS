@@ -1,0 +1,55 @@
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .dashboard-container {
+   display: flex;
+   height: 100vh; /* Ensure the container takes the full viewport height */
+ }
+ 
+ .sidebar {
+   width: 250px;
+   background: #2c2d2ee0;
+   color: #fff;
+   height: 100vh; /* Ensure the sidebar takes the full viewport height */
+   display: flex;
+   flex-direction: column;
+   justify-content: center; /* Center the buttons vertically */
+   align-items: center; /* Center the buttons horizontally (optional) */
+ }
+ 
+ .btn.custom-btn {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   color: #fff;
+   text-align: left;
+   text-decoration: none;
+   background: #06092c82;
+   border: none;
+   border-radius: 4px;
+   font-size: 16px;
+ }
+ 
+ .btn.custom-btn:hover {
+   background: #555;
+ }
+ .btn.custom-btn:active {
+  background: #444; /* Background color when the button is clicked */
+  color: #ddd; /* Text color when the button is clicked */
+  border: 2px solid #aaa; /* Border color when the button is clicked */
+}
+
+.btn.custom-btn.selected {
+  background: #333; /* Background color when the button is selected */
+  color: #fff; /* Text color when the button is selected */
+  border: 2px solid #888; /* Border color when the button is selected */
+}
+ 
+ .fa {
+   margin-left: 10px;
+ }
+ 
